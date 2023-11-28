@@ -1,0 +1,17 @@
+//Create user
+
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "kia",
+    "email": "kia@gmail.com",
+    "password": "12345",
+    "confPassword": "12345",
+    "role": "user"
+}
+
+###
+
+
+GET http://localhost:5000/users
