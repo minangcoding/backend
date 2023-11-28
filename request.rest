@@ -4,14 +4,34 @@ POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "kia",
-    "email": "kia@gmail.com",
+    "name": "pido",
+    "email": "pido@gmail.com",
     "password": "12345",
     "confPassword": "12345",
-    "role": "user"
+    "role": "admin"
 }
 
 ###
-
-
+// Get All Users
 GET http://localhost:5000/users
+
+###
+//get Single User
+GET http://localhost:5000/users/5e810757-2ce4-4b15-abf8-f026047f945e
+
+###
+//update User
+PATCH http://localhost:5000/users/9dc8be31-48c0-487d-ad86-1bdc129ba886
+Content-Type: application/json
+
+{
+    "name": "refido",
+    "email": "pido@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin"
+}
+
+###
+// Delete User
+DELETE http://localhost:5000
